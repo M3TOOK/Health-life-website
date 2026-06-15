@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.JPG" />
+    <title>Health Life</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">
+        <span class="health">Health</span><span class="life"> Life</span>
+      </h1>
+      <div class="sections">
+        <a href="#home">Home</a>
+        <a href="#features">Future</a>
+        <a href="#subscriptions">Subscriptions</a>
+        <a href="#info" onclick="openInfo()">INFO</a>
+      </div>
+      <div class="search">
+        <input
+          id="searchInput"
+          type="text"
+          class="input"
+          placeholder="Search..."
+        />
+        <button class="btn"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+    <header class="home" id="home">
+      <div class="all-content">
+        <div class="home-content" id="home-content">
+          <h1>Live better Feel stronger Stay balanced With Health Life App</h1>
+          <p>
+            Health Life App is your all-in-one companion for building a
+            healthier lifestyle. Whether you want to improve your fitness, eat
+            better, sleep well, or manage stress, the app helps you take small
+            daily steps toward a better version of yourself.
+          </p>
+        </div>
+        <div class="home-buttons">
+          <button class="download">Download</button>
+          <button class="learn">Learn More →</button>
+        </div>
+      </div>
+    </header>
+    <section class="features" id="features">
+      <a class="food" title="Features about food in app" onclick="openFood()"
+        ><span>Food</span></a
+      >
+      <a
+        class="sports"
+        title="Features about sports in app"
+        onclick="openSports()"
+        ><span>Sports</span></a
+      >
+      <a
+        class="habits"
+        title="Features about habits in app"
+        onclick="openHabits()"
+        ><span>Habits</span></a
+      >
+    </section>
+    <section class="subscriptions" id="subscriptions">
+      <div class="card1">
+        <h2>Stander</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>Make GYM plane for you</li>
+          <li>Monthly check-up with a specialist</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="stander"
+          onclick="openModal(50)"
+        >
+          50$ Monthly
+        </button>
+      </div>
+      <div class="card2">
+        <h2>Prime</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>No ads</li>
+          <li>Monthly check-up with a specialist</li>
+          <li>Make GYM plane for you</li>
+          <li>Get Table for Tracking weights GYM</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="prime"
+          onclick="openModal(100)"
+        >
+          100$ Monthly
+        </button>
+      </div>
+      <div class="card3">
+        <h2>Super Prime</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>No ads</li>
+          <li>Weekly check-up with a specialist</li>
+          <li>Make GYM plane for you</li>
+          <li>Get Table for Tracking weights GYM</li>
+          <li>Choice Special Supplements</li>
+          <li>Create plan for Supplements</li>
+          <li>Recommendation for monthly tests</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="super"
+          onclick="openModal(200)"
+        >
+          200$ Monthly
+        </button>
+      </div>
+      <div class="card4">
+        <h2>Stander</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>Make GYM plane for you</li>
+          <li>Monthly check-up with a specialist</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="stander"
+          onclick="openModal(480)"
+        >
+          <del>600$</del><br />480$ In Year
+        </button>
+      </div>
+      <div class="card5">
+        <h2>Prime</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>No ads</li>
+          <li>Monthly check-up with a specialist</li>
+          <li>Make GYM plane for you</li>
+          <li>Get Table for Tracking weights GYM</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="prime"
+          onclick="openModal(960)"
+        >
+          <del>1200$</del><br />960$ In Year
+        </button>
+      </div>
+      <div class="card6">
+        <h2>Super Prime</h2>
+        <h3>Features :-</h3>
+        <ul>
+          <li>No ads</li>
+          <li>Weekly check-up with a specialist</li>
+          <li>Make GYM plane for you</li>
+          <li>Get Table for Tracking weights GYM</li>
+          <li>Choice Special Supplements</li>
+          <li>Create plan for Supplements</li>
+          <li>Recommendation for monthly tests</li>
+        </ul>
+        <button
+          title="Click To Subscribe"
+          class="super"
+          onclick="openModal(1920)"
+        >
+          <del>2400$</del><br />1920$ In Year
+        </button>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="accounts">
+        <a
+          href="https://wa.me/201070224947?text=Welcome%0aCan%20Start%20Chat%20with%20me"
+          class="whatsapp"
+          target="_blank"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+        <a href="" class="instagram" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="" class="facebook" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </div>
+      <p>M8 Team | Mahmoud Matook &copy;</p>
+      <div class="links">
+        <a href="">Terms of Service</a><a href="">Return Policy</a
+        ><a href="">Privacy Policy</a>
+      </div>
+    </footer>
+    <div class="modal" id="paymentModal">
+      <div class="modal-content">
+        <h2>Payment</h2>
+        <form>
+          <input
+            id="username"
+            type="text"
+            placeholder="Username"
+            title="UserName"
+            required
+          />
+          <input
+            id="cardNumber"
+            type="text"
+            placeholder="Card Number"
+            title="Enter 16 number in card"
+            required
+          />
+          <input
+            id="expire"
+            type="text"
+            placeholder="mm/yy"
+            title="Expire Date"
+          />
+          <input
+            id="cvv"
+            type="text"
+            placeholder="CVV"
+            title="3 Numbers in Card"
+            required
+          />
+          <input id="price" type="text" readonly />
+          <button type="submit" class="confirm">Confirm</button>
+          <button onclick="closeModal()" class="cancel">Cancel</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="infoModal">
+      <div class="info-content">
+        <div class="header">
+          <h2>Description</h2>
+          <p>
+            Healthy Life app is a program that aims to raise health awareness
+            and help people become healthier through healthy habits, the best
+            exercise plan, and the best personalized diet plan.
+          </p>
+        </div>
+        <hr />
+        <div class="columins">
+          <div class="colum-one">
+            <h2>Goals</h2>
+            <ul>
+              <li>Better healthy life</li>
+              <li>Spreading awareness in the field of health</li>
+              <li>Facilitating health care</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="colum-two">
+            <h2>Features</h2>
+            <ul>
+              <li>Did all the health-related accounts</li>
+              <li>Make the best meal plan</li>
+              <li>Make the best training plan</li>
+              <li>Make the best plan to track healthy habits</li>
+            </ul>
+          </div>
+        </div>
+        <button onclick="closeInfo()" class="close">Close</button>
+      </div>
+    </div>
+    <div class="modal" id="foodModal">
+      <div class="food-content">
+        <h2>Food in health life app</h2>
+        <ol>
+          <li>
+            Enter information about user like current weight, height, age,
+            Gender and activity level
+          </li>
+          <li>Enter Target</li>
+          <li>Enter health problems the user suffers from</li>
+          <li>Calculate Calories and Macros</li>
+          <li>Make a best diet plane for user</li>
+        </ol>
+        <button onclick="closeFood()" class="close">Close</button>
+      </div>
+    </div>
+    <div class="modal" id="sportsModal">
+      <div class="sports-content">
+        <h2>Sports in health life app</h2>
+        <ol>
+          <li>Make a best sports plane for user Through body measure</li>
+          <li>Distribution of training and rest days throughout the week</li>
+        </ol>
+        <button onclick="closeSports()" class="close">Close</button>
+      </div>
+    </div>
+    <div class="modal" id="habitsModal">
+      <div class="habits-content">
+        <h2>Habits in health life app</h2>
+        <ol>
+          <li>Enter user interests</li>
+          <li>
+            Through user interests Create best daily, Weekly and monthly habits
+            for user
+          </li>
+        </ol>
+        <button onclick="closeHabits()" class="close">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
